@@ -28,13 +28,13 @@ export function ActivityFeed() {
   if (isLoading || !data) return <CardSkeleton lines={6} />;
 
   return (
-    <div className="rounded-xl border border-border bg-surface p-6 card-hover animate-slide-up">
-      <div className="flex items-center justify-between mb-5">
+    <div className="rounded-xl border border-border bg-surface p-6 card-hover animate-slide-up flex flex-col h-full">
+      <div className="flex items-center justify-between mb-5 shrink-0">
         <h3 className="text-sm font-semibold text-primary">{t('sections.activity.title')}</h3>
         <GitCommitHorizontal className="w-4 h-4 text-muted" />
       </div>
 
-      <div className="space-y-1">
+      <div className="space-y-1 flex-1">
         {data.map((item, i) => {
           const config = TYPE_CONFIG[item.type];
           const Icon = config.icon;

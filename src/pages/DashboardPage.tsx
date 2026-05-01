@@ -7,7 +7,6 @@ import { RevenueOverview } from '@/components/sections/RevenueOverview';
 import { UserAnalytics } from '@/components/sections/UserAnalytics';
 import { LiveRankings } from '@/components/sections/LiveRankings';
 import { PerformanceMetrics } from '@/components/sections/PerformanceMetrics';
-import { CountdownTimer } from '@/components/sections/CountdownTimer';
 import { ActivityFeed } from '@/components/sections/ActivityFeed';
 import type { PermissionKey } from '@/types';
 import { cn } from '@/lib/utils';
@@ -25,7 +24,6 @@ const SECTIONS: SectionConfig[] = [
   { id: 'revenue', permission: 'view_revenue', component: RevenueOverview, label: 'Revenue Overview' },
   { id: 'analytics', permission: 'view_analytics', component: UserAnalytics, label: 'User Analytics' },
   { id: 'performance', permission: 'view_performance', component: PerformanceMetrics, label: 'Performance Metrics' },
-  { id: 'countdown', permission: 'view_countdown', component: CountdownTimer, label: 'Countdown Timer' },
   { id: 'rankings', permission: 'view_rankings', component: LiveRankings, label: 'Live Rankings', wide: true },
   { id: 'activity', permission: 'view_activity', component: ActivityFeed, label: 'Activity Feed', wide: true },
 ];
@@ -47,7 +45,7 @@ export function DashboardPage() {
           const Component = section.component;
           const spanWide = section.wide && variant === 'grid';
           return (
-            <div key={section.id} className={cn(spanWide && 'md:col-span-2 xl:col-span-3')}>
+            <div key={section.id} className={cn('h-full', spanWide && 'md:col-span-2 xl:col-span-3')}>
               <SectionErrorBoundary sectionName={section.label}>
                 {hasPermission(section.permission) ? (
                   <Component />

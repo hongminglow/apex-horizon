@@ -18,7 +18,7 @@ export function UserAnalytics() {
   ];
 
   return (
-    <div className="rounded-xl border border-border bg-surface p-6 card-hover animate-slide-up">
+    <div className="rounded-xl border border-border bg-surface p-6 card-hover animate-slide-up flex flex-col h-full">
       <h3 className="text-sm font-semibold text-primary mb-5">{t('sections.analytics.title')}</h3>
 
       {/* Stat cards */}
@@ -55,6 +55,21 @@ export function UserAnalytics() {
             </div>
           );
         })}
+      </div>
+
+      {/* Device Distribution */}
+      <div className="mt-auto pt-5 border-t border-border">
+        <p className="text-[10px] text-muted uppercase tracking-wide mb-3">Device Distribution</p>
+        <div className="flex items-center gap-1 h-3 rounded-full overflow-hidden mb-3">
+          <div className="h-full bg-accent hover:opacity-80 transition-opacity" style={{ width: '62%' }} title="Desktop: 62%" />
+          <div className="h-full bg-success hover:opacity-80 transition-opacity" style={{ width: '28%' }} title="Mobile: 28%" />
+          <div className="h-full bg-warning hover:opacity-80 transition-opacity" style={{ width: '10%' }} title="Tablet: 10%" />
+        </div>
+        <div className="flex items-center justify-between text-[10px]">
+          <div className="flex items-center gap-1.5"><div className="w-2 h-2 rounded-full bg-accent" /> <span className="text-secondary">Desktop</span> <span className="font-mono text-primary font-medium">62%</span></div>
+          <div className="flex items-center gap-1.5"><div className="w-2 h-2 rounded-full bg-success" /> <span className="text-secondary">Mobile</span> <span className="font-mono text-primary font-medium">28%</span></div>
+          <div className="flex items-center gap-1.5"><div className="w-2 h-2 rounded-full bg-warning" /> <span className="text-secondary">Tablet</span> <span className="font-mono text-primary font-medium">10%</span></div>
+        </div>
       </div>
     </div>
   );

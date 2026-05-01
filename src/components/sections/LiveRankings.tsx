@@ -11,8 +11,8 @@ export function LiveRankings() {
   if (isLoading || !data) return <CardSkeleton lines={6} />;
 
   return (
-    <div className="rounded-xl border border-border bg-surface p-6 card-hover animate-slide-up">
-      <div className="flex items-center justify-between mb-5">
+    <div className="rounded-xl border border-border bg-surface p-6 card-hover animate-slide-up flex flex-col h-full">
+      <div className="flex items-center justify-between mb-5 shrink-0">
         <h3 className="text-sm font-semibold text-primary">{t('sections.rankings.title')}</h3>
         <span className="flex items-center gap-1.5 text-[10px] font-bold uppercase tracking-widest text-error">
           <Radio className="w-3 h-3 animate-pulse-soft" />

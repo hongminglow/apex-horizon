@@ -26,10 +26,10 @@ export function PerformanceMetrics() {
   if (isLoading || !data) return <CardSkeleton lines={4} />;
 
   return (
-    <div className="rounded-xl border border-border bg-surface p-6 card-hover animate-slide-up">
-      <h3 className="text-sm font-semibold text-primary mb-5">{t('sections.performance.title')}</h3>
+    <div className="rounded-xl border border-border bg-surface p-6 card-hover animate-slide-up flex flex-col h-full">
+      <h3 className="text-sm font-semibold text-primary mb-5 shrink-0">{t('sections.performance.title')}</h3>
 
-      <div className="grid grid-cols-2 gap-3">
+      <div className="grid grid-cols-2 gap-3 flex-1 content-start">
         {data.map((metric) => {
           const Icon = ICON_MAP[metric.icon] ?? Activity;
           const statusClass = STATUS_COLORS[metric.status];
