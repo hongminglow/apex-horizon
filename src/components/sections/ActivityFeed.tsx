@@ -1,6 +1,6 @@
 import { useTranslation } from 'react-i18next';
 import { useActivityQuery } from '@/api/endpoints/dashboard';
-import { CardSkeleton } from '@/components/ui/CardSkeleton';
+import { ActivitySkeleton } from '@/components/ui/CardSkeleton';
 import { GitCommitHorizontal, Plus, Pencil, Trash2, LogIn, Rocket } from 'lucide-react';
 
 const TYPE_CONFIG = {
@@ -25,7 +25,7 @@ export function ActivityFeed() {
   const { data, isLoading } = useActivityQuery();
   const { t } = useTranslation();
 
-  if (isLoading || !data) return <CardSkeleton lines={6} />;
+  if (isLoading || !data) return <ActivitySkeleton />;
 
   return (
     <div className="rounded-xl border border-border bg-surface p-6 card-hover animate-slide-up flex flex-col h-full">

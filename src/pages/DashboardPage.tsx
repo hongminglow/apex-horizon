@@ -36,7 +36,8 @@ const LAYOUT_CLASSES = {
 
 export function DashboardPage() {
   const { variant } = useLayoutStore();
-  const { hasPermission } = usePermissionStore();
+  const permissions = usePermissionStore((state) => state.permissions);
+  const hasPermission = (key: PermissionKey) => permissions[key] ?? false;
 
   return (
     <DashboardShell>
