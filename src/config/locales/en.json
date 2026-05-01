@@ -1,0 +1,108 @@
+{
+  "app": {
+    "name": "Apex Horizon",
+    "tagline": "Enterprise Analytics Platform"
+  },
+  "nav": {
+    "dashboard": "Dashboard",
+    "analytics": "Analytics",
+    "reports": "Reports",
+    "settings": "Settings"
+  },
+  "auth": {
+    "title": "Welcome Back",
+    "subtitle": "Sign in to your Apex Horizon account",
+    "email": "Email Address",
+    "password": "Password",
+    "login": "Sign In",
+    "logging_in": "Signing In...",
+    "logout": "Sign Out",
+    "demo_note": "Demo credentials are pre-filled for you"
+  },
+  "controls": {
+    "title": "Control Center",
+    "appearance": "Appearance",
+    "theme": "Theme",
+    "dark": "Dark",
+    "light": "Light",
+    "palette": "Color Palette",
+    "layout": "Layout",
+    "grid": "Grid",
+    "compact": "Compact",
+    "wide": "Wide",
+    "language": "Language",
+    "permissions": "Permissions",
+    "error_demos": "Error Demos",
+    "reset_permissions": "Reset All"
+  },
+  "sections": {
+    "revenue": {
+      "title": "Revenue Overview",
+      "total": "Total Revenue",
+      "growth": "Growth",
+      "avg_order": "Avg. Order",
+      "transactions": "Transactions"
+    },
+    "analytics": {
+      "title": "User Analytics",
+      "total_users": "Total Users",
+      "active_users": "Active Users",
+      "new_signups": "New Signups",
+      "churn_rate": "Churn Rate",
+      "by_region": "Users by Region",
+      "by_device": "Device Breakdown"
+    },
+    "rankings": {
+      "title": "Live Rankings",
+      "rank": "Rank",
+      "name": "Name",
+      "score": "Score",
+      "change": "Change",
+      "live": "LIVE"
+    },
+    "performance": {
+      "title": "Performance Metrics",
+      "healthy": "Healthy",
+      "warning": "Warning",
+      "critical": "Critical"
+    },
+    "countdown": {
+      "title": "Event Countdown",
+      "days": "Days",
+      "hours": "Hours",
+      "minutes": "Minutes",
+      "seconds": "Seconds",
+      "target": "Target Event"
+    },
+    "activity": {
+      "title": "Activity Feed",
+      "just_now": "Just now",
+      "minutes_ago": "{{count}}m ago",
+      "hours_ago": "{{count}}h ago",
+      "actions": {
+        "create": "created",
+        "update": "updated",
+        "delete": "deleted",
+        "login": "logged in to",
+        "deploy": "deployed"
+      }
+    }
+  },
+  "errors": {
+    "restricted": "Access Restricted",
+    "restricted_desc": "You don't have permission to view this section. Enable it in the Control Center.",
+    "boundary_title": "Something went wrong",
+    "boundary_desc": "This section encountered an error.",
+    "retry": "Retry",
+    "go_back": "Go Back",
+    "go_home": "Go to Dashboard",
+    "404_title": "Page Not Found",
+    "404_desc": "The page you're looking for doesn't exist or has been moved.",
+    "403_title": "Access Forbidden",
+    "403_desc": "You don't have permission to access this resource.",
+    "500_title": "Server Error",
+    "500_desc": "An internal server error occurred. Please try again later.",
+    "network_title": "Network Error",
+    "network_desc": "Unable to connect to the server. Check your internet connection."
+  }
+}

@@ -1,0 +1,108 @@
+{
+  "app": {
+    "name": "巅峰视界",
+    "tagline": "企业级分析平台"
+  },
+  "nav": {
+    "dashboard": "仪表盘",
+    "analytics": "数据分析",
+    "reports": "报告",
+    "settings": "设置"
+  },
+  "auth": {
+    "title": "欢迎回来",
+    "subtitle": "登录您的 Apex Horizon 账户",
+    "email": "电子邮件",
+    "password": "密码",
+    "login": "登录",
+    "logging_in": "正在登录...",
+    "logout": "退出登录",
+    "demo_note": "已为您预填演示凭据"
+  },
+  "controls": {
+    "title": "控制中心",
+    "appearance": "外观",
+    "theme": "主题",
+    "dark": "深色",
+    "light": "浅色",
+    "palette": "配色方案",
+    "layout": "布局",
+    "grid": "网格",
+    "compact": "紧凑",
+    "wide": "宽屏",
+    "language": "语言",
+    "permissions": "权限管理",
+    "error_demos": "错误演示",
+    "reset_permissions": "重置所有"
+  },
+  "sections": {
+    "revenue": {
+      "title": "收入概览",
+      "total": "总收入",
+      "growth": "增长率",
+      "avg_order": "平均订单",
+      "transactions": "交易量"
+    },
+    "analytics": {
+      "title": "用户分析",
+      "total_users": "总用户数",
+      "active_users": "活跃用户",
+      "new_signups": "新注册",
+      "churn_rate": "流失率",
+      "by_region": "按地区统计",
+      "by_device": "设备分布"
+    },
+    "rankings": {
+      "title": "实时排行榜",
+      "rank": "排名",
+      "name": "名称",
+      "score": "分数",
+      "change": "变化",
+      "live": "直播"
+    },
+    "performance": {
+      "title": "性能指标",
+      "healthy": "正常",
+      "warning": "警告",
+      "critical": "严重"
+    },
+    "countdown": {
+      "title": "活动倒计时",
+      "days": "天",
+      "hours": "时",
+      "minutes": "分",
+      "seconds": "秒",
+      "target": "目标事件"
+    },
+    "activity": {
+      "title": "活动动态",
+      "just_now": "刚刚",
+      "minutes_ago": "{{count}}分钟前",
+      "hours_ago": "{{count}}小时前",
+      "actions": {
+        "create": "创建了",
+        "update": "更新了",
+        "delete": "删除了",
+        "login": "登录了",
+        "deploy": "部署了"
+      }
+    }
+  },
+  "errors": {
+    "restricted": "访问受限",
+    "restricted_desc": "您没有权限查看此部分。请在控制中心中启用。",
+    "boundary_title": "出现问题",
+    "boundary_desc": "此部分遇到了错误。",
+    "retry": "重试",
+    "go_back": "返回",
+    "go_home": "前往仪表盘",
+    "404_title": "页面未找到",
+    "404_desc": "您要查找的页面不存在或已被移动。",
+    "403_title": "禁止访问",
+    "403_desc": "您没有权限访问此资源。",
+    "500_title": "服务器错误",
+    "500_desc": "发生了内部服务器错误，请稍后重试。",
+    "network_title": "网络错误",
+    "network_desc": "无法连接到服务器，请检查网络连接。"
+  }
+}
