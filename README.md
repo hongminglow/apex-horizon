@@ -25,8 +25,9 @@ Apex-Horizon is a **production-ready, all-in-one enterprise platform** that demo
 ### 🎨 Visual & UX Excellence
 - **Futuristic dark theme** as default with glassmorphism effects
 - **Dynamic color palettes** - switch primary colors independently from theme
-- **Smooth transitions** - no lag when switching layouts or themes
-- **Real-time countdown timer** that persists across layout changes
+- **Smooth transitions** - Framer Motion powered sidebar and layout animations
+- **Zero-CLS Skeletons** - Component-specific, high-fidelity wireframe loaders
+- **Real-time countdown timer** elegantly integrated into Revenue Overview
 - **Responsive design** optimized for all screen sizes
 
 ### 🔧 Enterprise Patterns
@@ -46,8 +47,8 @@ Apex-Horizon is a **production-ready, all-in-one enterprise platform** that demo
 ### 🔐 Security & Access Control
 - **JWT authentication** with token storage and validation
 - **Auth guards** protecting routes
-- **RBAC system** with checkbox-based permission management
-- **Restricted access cards** for sections without permission
+- **RBAC system** with checkbox-based real-time permission management (Zustand)
+- **Graceful degradation** with height-matching restricted access fallback UI
 
 ## 🚀 Quick Start
 
