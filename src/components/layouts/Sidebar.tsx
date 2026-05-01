@@ -33,12 +33,12 @@ export function Sidebar() {
   if (sidebarCollapsed) {
     return (
       <aside className="flex flex-col items-center py-4 gap-4 w-14 shrink-0 border-r border-border bg-[var(--sidebar-bg)] h-screen sticky top-0">
-        <button type="button" onClick={toggleSidebar} className="p-2 rounded-lg hover:bg-accent-subtle text-muted hover:text-primary transition-colors cursor-pointer" aria-label="Expand sidebar">
-          <PanelLeft className="w-4 h-4" />
-        </button>
         <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-[var(--gradient-start)] to-[var(--gradient-end)] flex items-center justify-center">
           <Zap className="w-4 h-4 text-white" />
         </div>
+        <button type="button" onClick={toggleSidebar} className="p-2 rounded-lg hover:bg-accent-subtle text-muted hover:text-primary transition-colors cursor-pointer" aria-label="Expand sidebar">
+          <PanelLeft className="w-4 h-4" />
+        </button>
       </aside>
     );
   }
