@@ -1,10 +1,24 @@
 import { useTranslation } from 'react-i18next';
 import { useLayoutStore } from '@/features/layout/store';
 import { Search, Bell } from 'lucide-react';
+import { useEffect, useRef } from 'react';
 
 export function AppBar() {
   const { t } = useTranslation();
   const { variant } = useLayoutStore();
+  const searchInputRef = useRef<HTMLInputElement>(null);
+
+  useEffect(() => {
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if ((e.metaKey || e.ctrlKey) && e.key === 'k') {
+        e.preventDefault();
+        searchInputRef.current?.focus();
+      }
+    };
+
+    window.addEventListener('keydown', handleKeyDown);
+    return () => window.removeEventListener('keydown', handleKeyDown);
+  }, []);
 
   const layoutLabels = { grid: t('controls.grid'), compact: t('controls.compact'), wide: t('controls.wide') };
 
@@ -22,6 +36,7 @@ export function AppBar() {
         <div className="hidden md:flex items-center gap-2 px-3 py-1.5 rounded-lg bg-[var(--input-bg)] border border-[var(--input-border)] w-56">
           <Search className="w-3.5 h-3.5 text-muted" />
           <input
+            ref={searchInputRef}
             type="text"
             placeholder="Search..."
             className="flex-1 bg-transparent text-xs text-primary placeholder:text-muted outline-none"
