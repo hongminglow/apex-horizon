@@ -33,7 +33,7 @@ export class SectionErrorBoundary extends Component<Props, State> {
   render() {
     if (this.state.hasError) {
       return (
-        <div className="flex flex-col items-center justify-center gap-4 p-8 rounded-xl border border-error/20 bg-error/5 min-h-[200px] animate-fade-in">
+        <div className="flex flex-col items-center justify-center gap-4 p-8 rounded-xl border border-error/20 bg-error/5 min-h-[200px] h-full animate-fade-in">
           <div className="flex items-center justify-center w-12 h-12 rounded-full bg-error/10">
             <AlertTriangle className="w-6 h-6 text-error" />
           </div>

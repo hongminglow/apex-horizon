@@ -10,7 +10,7 @@ export function RestrictedAccessCard({ sectionName }: Props) {
   const { t } = useTranslation();
 
   return (
-    <div className="flex flex-col items-center justify-center gap-4 p-8 rounded-xl border border-border bg-surface min-h-[200px] animate-fade-in">
+    <div className="flex flex-col items-center justify-center gap-4 p-8 rounded-xl border border-border bg-surface min-h-[200px] h-full animate-fade-in">
       <div className="flex items-center justify-center w-14 h-14 rounded-full bg-accent-muted">
         <ShieldOff className="w-7 h-7 text-accent" />
       </div>
